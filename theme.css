@@ -47,6 +47,12 @@
     --background-modifier-form-field: var(--void-bg-2);
     --tag-background: var(--void-bg-4);
 
+    --code-background: var(--void-bg-4);
+    --code-normal: var(--void-text-0);
+    --code-size: 0.9em;
+    --inline-code-background: var(--void-bg-3);
+    --inline-code-color: var(--void-text-0);
+
     --text-normal: var(--void-text-0);
     --text-muted: var(--void-text-1);
     --text-faint: var(--void-text-2);
@@ -301,4 +307,35 @@ body.theme-dark .view-header-nav-buttons .clickable-icon:hover {
 
 body.theme-dark button.mod-cta {
     color: var(--void-bg-3);
+}
+
+body.theme-dark .markdown-preview-view code,
+body.theme-dark .cm-s-obsidian .cm-inline-code {
+    background: var(--void-bg-3);
+    color: var(--void-text-0);
+    border: 1px solid var(--void-border);
+    border-radius: var(--void-radius-sm);
+    padding: 0.1em 0.4em;
+    font-size: 0.875em;
+}
+
+body.theme-dark .markdown-preview-view pre {
+    background: var(--void-bg-4);
+    border: 1px solid var(--void-border);
+    border-radius: var(--void-radius-lg);
+    padding: 1em 1.2em;
+    margin: 1em 0;
+}
+
+body.theme-dark .markdown-preview-view pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: var(--void-text-0);
+}
+
+body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+    background: var(--void-bg-4);
+    color: var(--void-text-0);
 }
