@@ -16,6 +16,14 @@ Built with a black and gray palette, subtle contrast, and minimal visual noise.
 
 ![Void canvas preview](img/screenshot-canvas.png)
 
+## Installation
+
+To install the theme
+
+- Open Obsidian Settings
+- Go to `Appearance` and click `Manage`
+- Under community themes search for "Void" and click `Use`
+
 ## About
 
 Void keeps Obsidian simple: dark surfaces, soft text, restrained accents, and a calm interface for writing, reading, and organizing notes.
