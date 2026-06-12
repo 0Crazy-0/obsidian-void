@@ -45,7 +45,12 @@
     --background-modifier-active-hover: var(--void-bg-4);
     --background-modifier-border: var(--void-border);
     --background-modifier-form-field: var(--void-bg-2);
+    --tag-color: var(--void-text-1);
+    --tag-color-hover: var(--void-accent);
     --tag-background: var(--void-bg-4);
+    --tag-background-hover: var(--void-bg-3);
+    --tag-border-color: var(--void-border);
+    --tag-border-color-hover: var(--void-link-border-hover);
 
     --code-background: var(--void-bg-4);
     --code-normal: var(--void-text-0);
@@ -62,6 +67,8 @@
     --interactive-accent: var(--void-accent);
     --interactive-accent-hover: var(--void-accent-glow);
     --interactive-accent-rgb: var(--void-highlight-rgb);
+    --text-on-accent: var(--void-bg-1);
+    --text-on-accent-inverted: var(--void-text-0);
 
     --text-selection: var(--void-selection);
     --text-highlight-bg: rgba(var(--void-highlight-rgb), 0.08);
@@ -257,15 +264,18 @@ body.theme-dark .status-bar {
 }
 
 body.theme-dark .tag {
-    background: var(--void-bg-3);
-    border: 1px solid var(--void-border);
+    color: var(--tag-color);
+    background: var(--tag-background);
+    border: 1px solid var(--tag-border-color);
     border-radius: var(--void-radius-md);
     font-size: 0.8em;
     padding: 1px 7px;
 }
 
 body.theme-dark .tag:hover {
-    color: var(--void-accent);
+    color: var(--tag-color-hover);
+    background: var(--tag-background-hover);
+    border-color: var(--tag-border-color-hover);
 }
 
 strong,
