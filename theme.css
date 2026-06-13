@@ -13,7 +13,7 @@
     --void-accent: #d3d3d3;
     --void-accent-glow: #d3d3d3;
     --void-border: #202020;
-    --void-selection: #2a2a2a;
+    --void-selection: rgba(var(--void-highlight-rgb), 0.15);
 
     /* Shared UI values */
     --void-highlight-rgb: 232, 232, 232;
@@ -55,8 +55,8 @@
     --code-background: var(--void-bg-4);
     --code-normal: var(--void-text-0);
     --code-size: 0.9em;
-    --inline-code-background: var(--void-bg-3);
-    --inline-code-color: var(--void-text-0);
+    --inline-code-background: var(--void-bg-4);
+    --inline-code-color: var(--void-accent);
 
     --text-normal: var(--void-text-0);
     --text-muted: var(--void-text-1);
@@ -169,9 +169,17 @@ body.theme-dark .cm-s-obsidian .cm-cursor {
     border-left: 2px solid var(--void-accent-glow);
 }
 
+body.theme-dark .cm-editor .cm-selectionLayer {
+    z-index: 1;
+}
+
+body.theme-dark .cm-editor .cm-content {
+    z-index: 0;
+}
+
 body.theme-dark .cm-s-obsidian .cm-selectionBackground,
 body.theme-dark .cm-s-obsidian .cm-focused .cm-selectionBackground {
-    background: rgba(var(--void-highlight-rgb), 0.07);
+    background: var(--void-selection);
 }
 
 .markdown-preview-view blockquote {
@@ -321,12 +329,26 @@ body.theme-dark button.mod-cta {
 
 body.theme-dark .markdown-preview-view code,
 body.theme-dark .cm-s-obsidian .cm-inline-code {
-    background: var(--void-bg-3);
-    color: var(--void-text-0);
-    border: 1px solid var(--void-border);
+    background: var(--void-bg-4);
+    color: var(--void-accent);
+    border: none;
     border-radius: var(--void-radius-sm);
-    padding: 0.1em 0.4em;
+    padding: 0.15em 0.35em;
     font-size: 0.875em;
+}
+
+body.theme-dark .cm-s-obsidian .cm-inline-code.cm-formatting-code {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+body.theme-dark .markdown-preview-view code::selection,
+body.theme-dark .cm-s-obsidian .cm-inline-code::selection,
+body.theme-dark .markdown-preview-view code *::selection,
+body.theme-dark .cm-s-obsidian .cm-inline-code *::selection {
+    background: var(--void-selection);
+    color: var(--void-text-0);
 }
 
 body.theme-dark .markdown-preview-view pre {
