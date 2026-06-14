@@ -9,6 +9,7 @@
     --void-text-0: #e6e6e6;
     --void-text-1: #a8a8a8;
     --void-text-2: #606060;
+    --void-text-3: #404040;
 
     --void-accent: #d3d3d3;
     --void-accent-glow: #d3d3d3;
@@ -75,6 +76,7 @@
     --titlebar-text-color: var(--void-titlebar-text);
     --titlebar-text-color-focused: var(--void-titlebar-text-focused);
     --background-modifier-selected: var(--void-bg-3);
+    --hr-color: var(--void-text-3);
 }
 
 body {
@@ -192,7 +194,7 @@ body.theme-dark .cm-s-obsidian .cm-focused .cm-selectionBackground {
     margin: 1.5em 0;
 }
 
-.markdown-preview-view ol > li::marker {
+.markdown-preview-view ol>li::marker {
     font-weight: var(--font-weight-medium);
 }
 
@@ -391,4 +393,3 @@ body.theme-dark .flair.mod-pop {
     color: var(--void-accent);
     border: 1px solid var(--void-border);
 }
-
