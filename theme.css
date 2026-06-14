@@ -74,6 +74,7 @@
     --text-highlight-bg: rgba(var(--void-highlight-rgb), 0.08);
     --titlebar-text-color: var(--void-titlebar-text);
     --titlebar-text-color-focused: var(--void-titlebar-text-focused);
+    --background-modifier-selected: var(--void-bg-3);
 }
 
 body {
@@ -371,3 +372,23 @@ body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
     background: var(--void-bg-4);
     color: var(--void-text-0);
 }
+
+/* Settings: Community themes/plugins selection and flairs */
+body.theme-dark .community-item:hover,
+body.theme-dark .community-item.is-selected,
+body.theme-dark .community-item.is-selected:hover {
+    background-color: var(--void-bg-3);
+    border-color: var(--void-border);
+}
+
+body.theme-dark .flair {
+    background-color: var(--void-bg-3);
+    color: var(--void-text-1);
+}
+
+body.theme-dark .flair.mod-pop {
+    background-color: var(--void-bg-4);
+    color: var(--void-accent);
+    border: 1px solid var(--void-border);
+}
+
