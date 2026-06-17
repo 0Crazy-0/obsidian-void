@@ -423,5 +423,14 @@ body.theme-dark .flair {
 body.theme-dark .flair.mod-pop {
     background-color: var(--void-bg-4);
     color: var(--void-accent);
-    border: 1px solid var(--void-border);
+    border: var(--void-border);
+}
+
+
+body.theme-dark .community-item.is-selected * {
+    color: var(--void-text-1);
+}
+
+body.theme-dark:not(.is-phone) .community-item.is-selected .community-item-author {
+    color: var(--void-text-1);
 }
