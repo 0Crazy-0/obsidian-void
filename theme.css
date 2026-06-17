@@ -75,6 +75,8 @@
     --text-highlight-bg: rgba(var(--void-highlight-rgb), 0.08);
     --titlebar-text-color: var(--void-titlebar-text);
     --titlebar-text-color-focused: var(--void-titlebar-text-focused);
+    --nav-item-background-active: var(--void-selection);
+    --nav-item-background-hover: var(--void-selection);
     --background-modifier-selected: var(--void-bg-3);
     --hr-color: var(--void-text-3);
 }
@@ -145,6 +147,12 @@ body.theme-dark a:hover,
 body.theme-dark .internal-link:hover {
     color: var(--void-accent-glow);
     border-bottom-color: var(--void-link-border-hover);
+}
+
+body.theme-dark .nav-file-title.is-active,
+body.theme-dark .nav-folder-title.is-active,
+body.theme-dark .tree-item-self.is-active {
+    background-color: var(--nav-item-background-active);
 }
 
 .workspace-tab-header {
