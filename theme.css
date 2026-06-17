@@ -38,6 +38,9 @@
 }
 
 .theme-dark {
+    --void-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --void-accent-glow: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
+
     --background-primary: var(--void-bg-1);
     --background-primary-alt: var(--void-bg-2);
     --background-secondary: var(--void-bg-2);
@@ -82,6 +85,11 @@
 }
 
 body {
+    /* Accent default */
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 83%;
+
     font-size: var(--font-text-size);
     line-height: var(--line-height-normal);
     -webkit-font-smoothing: antialiased;
