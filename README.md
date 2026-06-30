@@ -10,13 +10,7 @@ Built with a black and gray palette, subtle contrast, and minimal visual noise.
 
 ![Void notes preview](img/screenshot.png)
 
----
-
-### Canvas View
-
-![Void canvas preview](img/screenshot-canvas.png)
-
-This theme is designed for dark mode only. In light mode, it may look bad and become hard to read.
+> This theme is designed for dark mode only. In light mode, it may look bad and become hard to read.
 
 ## Installation
 
