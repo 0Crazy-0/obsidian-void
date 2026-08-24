@@ -410,3 +410,26 @@ body.theme-dark .markdown-preview-view th {
     text-align: left;
     border-bottom: 2px solid var(--void-table-border);
 }
+
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    border: 1px solid var(--void-table-border);
+}
+
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table th,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table td,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget th,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget td {
+    padding: 0.6em 0.8em;
+    border: 1px solid var(--void-table-border);
+}
+
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table th,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget th {
+    background: transparent;
+    text-align: left;
+    border-bottom: 2px solid var(--void-table-border);
+}
