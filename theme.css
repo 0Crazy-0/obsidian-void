@@ -72,8 +72,8 @@
     --interactive-accent: var(--void-accent);
     --interactive-accent-hover: var(--void-accent-glow);
     --interactive-accent-rgb: var(--void-highlight-rgb);
-    --text-on-accent: var(--void-text-0);
-    --text-on-accent-inverted: var(--void-text-0);
+    --text-on-accent: var(--void-bg-1);
+    --text-on-accent-inverted: var(--void-bg-1);
 
     --text-selection: var(--void-selection);
     --text-highlight-bg: rgba(var(--void-highlight-rgb), 0.08);
