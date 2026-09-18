@@ -391,6 +391,13 @@ body.theme-dark .community-item.is-selected:hover {
 
 body.theme-dark .flair {
     background-color: var(--void-bg-3);
+    color: var(--void-text-1);
+}
+
+body.theme-dark .flair.mod-pop {
+    background-color: var(--void-bg-4);
+    color: var(--void-accent);
+    border: 1px solid var(--void-border);
 }
 body.theme-dark .markdown-preview-view table {
     border-collapse: collapse;
